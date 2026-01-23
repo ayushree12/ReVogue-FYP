@@ -40,7 +40,7 @@ const AdminSidebar = () => {
               className={({ isActive }) =>
                 `flex items-center gap-3 rounded-2xl border border-transparent px-3 py-3 text-sm font-semibold transition ${
                   isActive
-                    ? 'border-indigo-200 bg-indigo-50 text-indigo-600 shadow-inner'
+                    ? 'border-black bg-black text-white shadow-inner'
                     : 'text-slate-600 hover:border-slate-200 hover:bg-slate-50 hover:text-slate-900'
                 }`
               }
@@ -54,7 +54,7 @@ const AdminSidebar = () => {
         <div className="mt-auto space-y-3">
           <NavLink
             to="/admin/reports"
-            className="flex items-center justify-center gap-2 rounded-3xl bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg"
+            className="flex items-center justify-center gap-2 rounded-3xl bg-black hover:bg-slate-800 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition"
           >
             <Plus className="h-4 w-4" />
             Generate report

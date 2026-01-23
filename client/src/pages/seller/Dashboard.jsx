@@ -96,7 +96,7 @@ const SellerDashboard = () => {
             className="section-card flex flex-col gap-2 border border-slate-100 p-5 shadow-lg"
           >
             <div className="flex items-center gap-3 text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
-              <card.icon className="h-5 w-5 text-indigo-500" />
+              <card.icon className="h-5 w-5 text-black" />
               {card.label}
             </div>
             <p className="text-3xl font-bold text-slate-900">{card.value}</p>
@@ -150,7 +150,7 @@ const SellerDashboard = () => {
                       {(order.totalAmount || 0).toLocaleString()}
                     </p>
                   </div>
-                  <span className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                  <span className="rounded-full bg-slate-100 border border-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-black">
                     {order.status.charAt(0).toUpperCase() + order.status.slice(1)}
                   </span>
                 </div>
@@ -166,7 +166,7 @@ const SellerDashboard = () => {
             <button
               type="button"
               onClick={() => navigate('/seller/products/new')}
-              className="flex items-center justify-between rounded-2xl bg-indigo-600 px-5 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:brightness-110"
+              className="flex items-center justify-between rounded-2xl bg-black px-5 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:bg-slate-800"
             >
               <span>Add New Product</span>
               <PlusCircle className="h-5 w-5" />
@@ -174,7 +174,7 @@ const SellerDashboard = () => {
             <button
               type="button"
               onClick={() => navigate('/seller/products')}
-              className="flex items-center justify-between rounded-2xl border border-slate-200 px-5 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-700 shadow-sm transition hover:border-indigo-300"
+              className="flex items-center justify-between rounded-2xl border border-slate-200 px-5 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-700 shadow-sm transition hover:border-black hover:text-black"
             >
               <span>Product library</span>
               <FolderPlus className="h-5 w-5" />
@@ -182,7 +182,7 @@ const SellerDashboard = () => {
             <button
               type="button"
               onClick={() => navigate('/seller/orders')}
-              className="flex items-center justify-between rounded-2xl border border-slate-200 px-5 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-700 shadow-sm transition hover:border-indigo-300"
+              className="flex items-center justify-between rounded-2xl border border-slate-200 px-5 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-slate-700 shadow-sm transition hover:border-black hover:text-black"
             >
               <span>View Order Tracker</span>
               <BarChart4 className="h-5 w-5" />
