@@ -59,7 +59,7 @@ const AdminCategories = () => {
           <label className="flex flex-col gap-1 text-sm text-slate-500">
             Category name
             <input
-              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
               value={form.name}
               onChange={(event) =>
                 setForm((prev) => ({ ...prev, name: event.target.value }))
@@ -70,7 +70,7 @@ const AdminCategories = () => {
           <label className="flex flex-col gap-1 text-sm text-slate-500">
             Parent (optional)
             <select
-              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
               value={form.parent}
               onChange={(event) =>
                 setForm((prev) => ({ ...prev, parent: event.target.value }))
@@ -87,7 +87,7 @@ const AdminCategories = () => {
         </div>
         <button
           type="submit"
-          className="w-full rounded-2xl bg-indigo-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white disabled:opacity-60"
+          className="w-full rounded-2xl bg-black px-6 py-3 text-sm font-semibold uppercase tracking-[0.2em] text-white disabled:opacity-60"
           disabled={creating}
         >
           {creating ? 'Adding category…' : 'Add category'}

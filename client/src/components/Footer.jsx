@@ -25,16 +25,16 @@ const Footer = () => (
   <footer className="bg-slate-900 text-slate-100">
     <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-10 sm:py-12 md:flex-row md:items-start md:justify-between">
       <div className="space-y-3 max-w-sm">
-        <p className="uppercase tracking-[0.2em] text-xs text-indigo-300">Revogue</p>
+        <p className="uppercase tracking-[0.2em] text-xs text-slate-400">Revogue</p>
         <h3 className="text-2xl font-semibold">Connect the marketplace.</h3>
         <p className="text-sm text-slate-300">
           Admin-approved vendors, shoppers, and partners collaborate on a shared platform.
           Stay ahead with curated drops, transparent commerce, and support that knows your role.
         </p>
-        <div className="flex flex-wrap gap-2 text-xs text-indigo-100">
-          <span className="badge-pill bg-white/10 text-indigo-100">Trusted</span>
-          <span className="badge-pill bg-white/10 text-indigo-100">Certified Vendors</span>
-          <span className="badge-pill bg-white/10 text-indigo-100">Role-based</span>
+        <div className="flex flex-wrap gap-2 text-xs text-slate-300">
+          <span className="badge-pill bg-white/10 text-slate-300">Trusted</span>
+          <span className="badge-pill bg-white/10 text-slate-300">Certified Vendors</span>
+          <span className="badge-pill bg-white/10 text-slate-300">Role-based</span>
         </div>
       </div>
 

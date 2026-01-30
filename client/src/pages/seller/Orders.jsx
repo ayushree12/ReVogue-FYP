@@ -185,7 +185,7 @@ const Orders = () => {
               <button
                 type="button"
                 onClick={() => setVisibleCount((prev) => prev + 5)}
-                className="flex items-center gap-2 rounded-full border border-slate-200 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 transition hover:border-indigo-300"
+                className="flex items-center gap-2 rounded-full border border-slate-200 px-6 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-500 transition hover:border-slate-400"
               >
                 Load more
               </button>

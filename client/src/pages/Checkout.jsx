@@ -225,7 +225,7 @@ const Checkout = () => {
   return (
     <section className="space-y-6">
       {khaltiMessage && (
-        <div className="rounded-[32px] border border-indigo-100 bg-indigo-50 p-4 text-sm text-indigo-700">
+        <div className="rounded-[32px] border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
           {khaltiMessage}
         </div>
       )}
@@ -259,7 +259,7 @@ const Checkout = () => {
           </div>
         ) : (
           <p className="text-muted">
-            Your cart is empty. <Link to="/products" className="font-semibold text-indigo-600">Browse products</Link>
+            Your cart is empty. <Link to="/products" className="font-semibold text-slate-900">Browse products</Link>
           </p>
         )}
       </div>
@@ -281,7 +281,7 @@ const Checkout = () => {
                 setShippingAddress((prev) => ({ ...prev, street: event.target.value }))
               }
               placeholder="House / flat number, street, landmark"
-              className="mt-1 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:border-indigo-500 focus:outline-none"
+              className="mt-1 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm focus:border-slate-900 focus:outline-none"
             />
           </label>
           <div className="grid gap-3 md:grid-cols-2">
@@ -293,7 +293,7 @@ const Checkout = () => {
                   setShippingAddress((prev) => ({ ...prev, city: event.target.value }))
                 }
                 placeholder="City"
-                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none"
+                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-slate-900 focus:outline-none"
               />
             </label>
             <label className="text-sm font-semibold text-slate-600">
@@ -304,7 +304,7 @@ const Checkout = () => {
                   setShippingAddress((prev) => ({ ...prev, district: event.target.value }))
                 }
                 placeholder="District"
-                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none"
+                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-slate-900 focus:outline-none"
               />
             </label>
           </div>
@@ -317,7 +317,7 @@ const Checkout = () => {
                   setShippingAddress((prev) => ({ ...prev, postalCode: event.target.value }))
                 }
                 placeholder="Postal / area code"
-                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none"
+                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-slate-900 focus:outline-none"
               />
             </label>
             <label className="text-sm font-semibold text-slate-600">
@@ -328,7 +328,7 @@ const Checkout = () => {
                   setShippingAddress((prev) => ({ ...prev, country: event.target.value }))
                 }
                 placeholder="Country"
-                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-indigo-500 focus:outline-none"
+                className="mt-1 w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm focus:border-slate-900 focus:outline-none"
               />
             </label>
           </div>
@@ -379,7 +379,7 @@ const Checkout = () => {
               type="button"
               onClick={placeCodOrder}
               disabled={processing || !hasItems}
-              className="w-full rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+              className="w-full rounded-2xl bg-black px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-60"
             >
               {processing ? 'Placing order…' : 'Place order (Cash on delivery)'}
             </button>

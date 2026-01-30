@@ -37,7 +37,7 @@ const OrderTimeline = ({ status }) => {
           key={step.key}
           className={`rounded-full border px-3 py-1 text-[10px] font-semibold ${
             step.completed
-              ? 'border-indigo-500 bg-indigo-500 text-white'
+              ? 'border-black bg-black text-white'
               : 'border-slate-200 bg-white text-slate-500'
           }`}
         >
@@ -89,14 +89,14 @@ const Orders = () => {
               <p className="text-sm text-muted">Active orders</p>
               <h2 className="text-2xl font-semibold">Order history</h2>
             </div>
-            <button className="text-xs uppercase tracking-[0.3em] text-indigo-600">Download</button>
+            <button className="text-xs uppercase tracking-[0.3em] text-slate-900">Download</button>
           </div>
           <div className="space-y-4">
             {orders.length ? (
               orders.map((order) => (
                 <article
                   key={order._id}
-                  className="rounded-2xl border border-slate-100 bg-white/90 p-4 shadow-sm transition hover:border-indigo-300 cursor-pointer"
+                  className="rounded-2xl border border-slate-100 bg-white/90 p-4 shadow-sm transition hover:border-slate-400 cursor-pointer"
                   onClick={() => setSelectedOrder(order)}
                 >
                   <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
@@ -105,7 +105,7 @@ const Orders = () => {
                       <p className="text-base font-semibold">Rs {order.totalAmount?.toLocaleString()}</p>
                     </div>
                     <div className="flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.2em] text-slate-500">
-                      <span className="rounded-full border border-slate-200 px-3 py-1 text-indigo-600">
+                      <span className="rounded-full border border-slate-200 px-3 py-1 text-slate-900">
                         {order.status || 'Pending'}
                       </span>
                       <p className="text-xs text-muted">{new Date(order.createdAt).toLocaleDateString()}</p>
@@ -137,7 +137,7 @@ const Orders = () => {
                   <span
                     key={step.key}
                     className={`rounded-full px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.3em] ${
-                      step.active ? 'bg-indigo-600 text-white' : 'border border-slate-200 text-slate-500'
+                      step.active ? 'bg-black text-white' : 'border border-slate-200 text-slate-500'
                     }`}
                   >
                     {step.label}
@@ -154,7 +154,7 @@ const Orders = () => {
               <button
                 type="button"
                 onClick={() => trackRef.current?.scrollIntoView({ behavior: 'smooth' })}
-                className="w-full rounded-2xl bg-indigo-600 px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-indigo-700 transition"
+                className="w-full rounded-2xl bg-black px-4 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-gray-800 transition"
               >
                 Track this order
               </button>

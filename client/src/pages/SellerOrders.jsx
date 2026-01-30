@@ -61,7 +61,7 @@ const SellerOrders = () => {
             <p className="section-subtitle">Order tracking</p>
             <h2 className="text-2xl font-semibold">Latest order timeline</h2>
           </div>
-          <button className="text-xs uppercase tracking-[0.3em] text-indigo-600">Export</button>
+          <button className="text-xs uppercase tracking-[0.3em] text-slate-900">Export</button>
         </div>
         {latestOrder ? (
           <div className="space-y-4">
@@ -74,7 +74,7 @@ const SellerOrders = () => {
                 <div key={step} className="flex flex-col items-center gap-2">
                   <div
                     className={`flex h-12 w-12 items-center justify-center rounded-2xl border border-slate-200 text-xs font-semibold ${
-                      index <= activeStepIndex ? 'bg-indigo-50 text-indigo-600' : 'bg-slate-50 text-slate-500'
+                      index <= activeStepIndex ? 'bg-slate-100 text-slate-900' : 'bg-slate-50 text-slate-500'
                     }`}
                   >
                     {index + 1}
@@ -96,7 +96,7 @@ const SellerOrders = () => {
             <p className="section-subtitle">All orders</p>
             <h2 className="text-2xl font-semibold">Details & statuses</h2>
           </div>
-          <button className="text-xs uppercase tracking-[0.3em] text-indigo-600">Refresh</button>
+          <button className="text-xs uppercase tracking-[0.3em] text-slate-900">Refresh</button>
         </div>
         <div className="grid gap-4">
           {orders.map((order) => (

@@ -83,14 +83,14 @@ const Cart = () => {
           ))}
           <Link
             to="/checkout"
-            className="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:brightness-110"
+            className="inline-flex items-center justify-center rounded-2xl bg-black px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:bg-gray-800"
           >
             Proceed to checkout
           </Link>
         </div>
       ) : (
         <p className="text-muted">
-          No items in your cart yet. Start <Link to="/products" className="font-semibold text-indigo-600">shopping</Link>.
+          No items in your cart yet. Start <Link to="/products" className="font-semibold text-slate-900">shopping</Link>.
         </p>
       )}
     </div>

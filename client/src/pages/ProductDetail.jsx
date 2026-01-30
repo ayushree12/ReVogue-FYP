@@ -135,7 +135,7 @@ const ProductDetail = () => {
                 onChange={(e) => setMessageDraft(e.target.value)}
                 rows={3}
                 placeholder="Ask about condition, sizing, or delivery."
-                className="w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm text-slate-700 focus:border-indigo-500 focus:outline-none"
+                className="w-full rounded-2xl border border-slate-200 px-3 py-2 text-sm text-slate-700 focus:border-slate-900 focus:outline-none"
               />
               <button
                 type="button"
@@ -150,7 +150,7 @@ const ProductDetail = () => {
               <button
                 type="button"
                 onClick={handleOpenConversation}
-                className="w-full rounded-3xl border border-slate-200 px-4 py-3 text-sm text-slate-700 hover:border-indigo-400 hover:text-indigo-600"
+                className="w-full rounded-3xl border border-slate-200 px-4 py-3 text-sm text-slate-700 hover:border-slate-400 hover:text-slate-900"
               >
                 Open chat
               </button>

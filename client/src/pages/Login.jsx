@@ -54,7 +54,7 @@ const Login = () => {
           <input
             type="email"
             autoComplete="email"
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
             {...registerField('email')}
           />
           {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
@@ -65,7 +65,7 @@ const Login = () => {
           <input
             type="password"
             autoComplete="current-password"
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
             {...registerField('password')}
           />
           {errors.password && <p className="text-xs text-red-500">{errors.password.message}</p>}
@@ -73,16 +73,16 @@ const Login = () => {
 
         <button
           type="submit"
-          className="w-full rounded-2xl bg-indigo-600 px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-indigo-700 transition"
+          className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-gray-800 transition"
         >
           Continue
         </button>
 
         <div className="flex items-center justify-between text-xs text-slate-400">
-          <Link to="/forgot-password" className="font-semibold text-indigo-600 hover:text-indigo-500">
+          <Link to="/forgot-password" className="font-semibold text-slate-900 hover:text-slate-700">
             Forgot password?
           </Link>
-          <Link to="/register" className="font-semibold text-indigo-600 hover:text-indigo-500">
+          <Link to="/register" className="font-semibold text-slate-900 hover:text-slate-700">
             Create account
           </Link>
         </div>

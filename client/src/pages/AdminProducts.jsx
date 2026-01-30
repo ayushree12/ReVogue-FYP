@@ -58,14 +58,14 @@ const AdminProducts = () => {
                 </p>
               </div>
               <div className="flex flex-col items-start gap-2 text-sm sm:flex-row sm:items-center sm:gap-6">
-                <span className="text-lg font-semibold text-indigo-600">
+                <span className="text-lg font-semibold text-slate-900">
                   Rs {product.price?.toLocaleString() || '—'}
                 </span>
                 <button
                   type="button"
                   onClick={() => approve(product._id)}
                   disabled={approving === product._id}
-                  className="rounded-full border border-indigo-600 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600 transition hover:bg-indigo-600 hover:text-white disabled:opacity-60"
+                  className="rounded-full border border-black px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-black transition hover:bg-black hover:text-white disabled:opacity-60"
                 >
                   {approving === product._id ? 'Approving…' : 'Approve listing'}
                 </button>

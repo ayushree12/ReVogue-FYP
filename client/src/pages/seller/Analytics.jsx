@@ -45,7 +45,7 @@ const SellerAnalytics = () => {
           ? [1, 2, 3].map((index) => (
               <div
                 key={index}
-                className="rounded-[32px] border border-slate-100 bg-gradient-to-br from-indigo-50 to-white p-4 shadow-lg"
+                className="rounded-[32px] border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-4 shadow-lg"
               >
                 <div className="h-6 w-28 animate-pulse rounded-full bg-slate-200" />
                 <div className="mt-3 h-8 w-40 animate-pulse rounded-full bg-slate-200" />
@@ -55,10 +55,10 @@ const SellerAnalytics = () => {
           : metrics.map((metric) => (
               <article
                 key={metric.label}
-                className="flex flex-col gap-2 rounded-[32px] border border-slate-100 bg-gradient-to-br from-indigo-50 to-white p-4 shadow-lg"
+                className="flex flex-col gap-2 rounded-[32px] border border-slate-100 bg-gradient-to-br from-slate-50 to-white p-4 shadow-lg"
               >
                 <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
-                  <Activity className="h-4 w-4 text-indigo-500" />
+                  <Activity className="h-4 w-4 text-slate-900" />
                   {metric.label}
                 </div>
                 <p className="text-3xl font-semibold text-slate-900">{metric.value}</p>
@@ -73,7 +73,7 @@ const SellerAnalytics = () => {
             <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Trendline</p>
             <h2 className="text-2xl font-semibold text-slate-900">Momentum view</h2>
           </div>
-          <button className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">
+          <button className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-900">
             Export report
           </button>
         </div>
@@ -81,9 +81,9 @@ const SellerAnalytics = () => {
           <div className="rounded-2xl border border-dashed border-slate-200 bg-white p-4">
             <div className="flex items-center justify-between">
               <span className="text-xs uppercase tracking-[0.3em] text-slate-400">Chart</span>
-              <LineChart className="h-5 w-5 text-indigo-500" />
+              <LineChart className="h-5 w-5 text-slate-900" />
             </div>
-            <div className="mt-6 h-32 rounded-2xl bg-gradient-to-br from-indigo-500/20 to-transparent" />
+            <div className="mt-6 h-32 rounded-2xl bg-gradient-to-br from-slate-500/20 to-transparent" />
           </div>
           <div className="space-y-3 rounded-2xl border border-slate-200 bg-white p-4">
             {trendPoints.length === 0
@@ -105,7 +105,7 @@ const SellerAnalytics = () => {
 
       <section className="rounded-[32px] border border-slate-100 bg-white p-6 shadow-lg">
         <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
-          <TrendingUp className="h-4 w-4 text-indigo-500" />
+          <TrendingUp className="h-4 w-4 text-slate-900" />
           Alerts
         </p>
         <div className="mt-4 grid gap-4 md:grid-cols-3">

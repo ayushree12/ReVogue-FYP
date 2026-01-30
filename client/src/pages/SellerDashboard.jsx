@@ -43,7 +43,7 @@ const SellerDashboard = () => {
             <button className="rounded-2xl bg-white px-3 py-2 text-slate-500 shadow-sm transition hover:bg-slate-100">
               <ShoppingCartIcon className="h-5 w-5" />
             </button>
-            <button className="rounded-full bg-indigo-600 px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg">
+            <button className="rounded-full bg-black px-5 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg">
               Live
             </button>
           </div>
@@ -80,7 +80,7 @@ const SellerDashboard = () => {
             <div className="mt-6 space-y-4">
               {mockOrders.length === 0 ? (
                 <div className="rounded-2xl border border-dashed border-slate-200 bg-slate-50/70 p-6 text-center text-slate-500">
-                  <ArrowPathIcon className="mx-auto mb-3 h-6 w-6 animate-spin text-indigo-500" />
+                  <ArrowPathIcon className="mx-auto mb-3 h-6 w-6 animate-spin text-slate-500" />
                   <p className="text-sm">
                     No orders yet—focus on launching your first listing. Once orders arrive, they will show up here with
                     fulfillment states.
@@ -94,7 +94,7 @@ const SellerDashboard = () => {
                         <p className="text-sm text-muted">#{order.id}</p>
                         <p className="text-lg font-semibold">Rs {order.value}</p>
                       </div>
-                      <span className="rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-600">
+                      <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900">
                         {order.status}
                       </span>
                     </div>
@@ -109,7 +109,7 @@ const SellerDashboard = () => {
             <p className="section-subtitle">Action center</p>
             <h2 className="text-2xl font-semibold text-slate-900">Operational controls</h2>
             <div className="mt-6 flex flex-col gap-3">
-                <button className="flex items-center justify-between rounded-2xl bg-indigo-600 px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg">
+                <button className="flex items-center justify-between rounded-2xl bg-black px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg">
                   <span>Add New Product</span>
                   <PlusCircleIcon className="h-5 w-5" />
                 </button>
@@ -132,7 +132,7 @@ const SellerDashboard = () => {
         <section className="rounded-[1.5rem] bg-white p-6 shadow-lg">
           <div className="flex items-center justify-between">
             <p className="section-subtitle">Chat overview</p>
-            <button className="text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">
+            <button className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-900">
               Go to chats <ChatBubbleLeftEllipsisIcon className="inline-block h-4 w-4" />
             </button>
           </div>

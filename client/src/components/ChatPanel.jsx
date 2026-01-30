@@ -147,7 +147,7 @@ const ChatPanel = ({ conversation }) => {
             <div
               key={message._id || message.id}
               className={`rounded-2xl px-4 py-3 shadow-sm ${
-                isOwnMessage ? 'bg-indigo-50' : 'bg-slate-50'
+                isOwnMessage ? 'bg-slate-100' : 'bg-slate-50'
               }`}
             >
               <p className="text-[11px] uppercase tracking-[0.3em] text-slate-400">{senderName}</p>

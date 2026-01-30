@@ -57,7 +57,7 @@ const SellerVerification = () => {
         </p>
         <Link
           to="/login"
-          className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg"
+          className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg"
         >
           Login to apply
         </Link>
@@ -73,7 +73,7 @@ const SellerVerification = () => {
         <p className="text-muted">Head to your seller dashboard to manage catalogues and orders.</p>
         <Link
           to="/seller/dashboard"
-          className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg"
+          className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg"
         >
           Open seller dashboard
         </Link>
@@ -94,7 +94,7 @@ const SellerVerification = () => {
           <label className="flex flex-col gap-1 text-sm text-slate-500">
             Contact number
             <input
-              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
               value={form.contactNumber}
               onChange={(e) => setForm((prev) => ({ ...prev, contactNumber: e.target.value }))}
               placeholder="+977 98xx xxxx"
@@ -103,7 +103,7 @@ const SellerVerification = () => {
           <label className="flex flex-col gap-1 text-sm text-slate-500">
             Address
             <input
-              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+              className="rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
               value={form.address}
               onChange={(e) => setForm((prev) => ({ ...prev, address: e.target.value }))}
               placeholder="Enter your pickup/delivery area"
@@ -116,7 +116,7 @@ const SellerVerification = () => {
             type="button"
             onClick={submit}
             disabled={loading}
-            className="rounded-2xl bg-indigo-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-indigo-700 transition disabled:cursor-not-allowed disabled:bg-indigo-400"
+            className="rounded-2xl bg-black px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-gray-800 transition disabled:cursor-not-allowed disabled:bg-slate-400"
           >
             {loading ? 'Submitting...' : 'Submit for approval'}
           </button>

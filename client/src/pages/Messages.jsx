@@ -119,7 +119,7 @@ const Messages = () => {
                 onClick={() => handleSelectConversation(conversation.id)}
                 className={`w-full rounded-2xl border px-4 py-3 text-left transition ${
                   activeConversation?.id === conversation.id
-                    ? 'border-indigo-300 bg-indigo-50'
+                    ? 'border-slate-400 bg-slate-100'
                     : 'border-slate-200 bg-slate-50'
                 }`}
               >
@@ -130,7 +130,7 @@ const Messages = () => {
                   </span>
                 </div>
                 <p className="text-xs text-slate-500">{conversation.productTitle}</p>
-                <p className="text-xs text-indigo-600">
+                <p className="text-xs text-slate-900">
                   {conversation.preview || 'Tap to continue the conversation'}
                 </p>
               </button>

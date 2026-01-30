@@ -44,7 +44,7 @@ const OrdersTable = ({ orders, statusOptions, onStatusChange, onOpenDetails }) =
               <button
                 type="button"
                 onClick={() => onOpenDetails(order)}
-                className="flex items-center gap-1 rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-indigo-300"
+                className="flex items-center gap-1 rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold text-slate-600 transition hover:border-slate-400"
               >
                 <ListChecks className="h-4 w-4" />
                 Details

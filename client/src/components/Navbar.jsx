@@ -80,7 +80,7 @@ const Navbar = () => {
                 </Link>
                 <Link
                   to="/seller/verification"
-                  className="px-3 py-1.5 rounded-full bg-indigo-600 text-white text-sm font-semibold shadow-lg hover:bg-indigo-700 transition"
+                  className="px-3 py-1.5 rounded-full bg-black text-white text-sm font-semibold shadow-lg hover:bg-gray-800 transition"
                 >
                   Vendor access
                 </Link>
@@ -152,7 +152,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to="/seller/verification"
-                    className="py-2 px-2 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-600 font-semibold transition text-center"
+                    className="py-2 px-2 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold transition text-center"
                     onClick={() => setOpen(false)}
                   >
                     Vendor access

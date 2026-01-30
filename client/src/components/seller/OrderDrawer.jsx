@@ -20,7 +20,7 @@ const OrderDrawer = ({ order, onClose }) => {
               <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Order</p>
               <h2 className="text-2xl font-semibold text-slate-900">{order.id}</h2>
             </div>
-            <span className="rounded-2xl bg-indigo-50 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">
+            <span className="rounded-2xl bg-slate-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-slate-900">
               {order.displayStatus || order.status}
             </span>
           </div>
@@ -28,7 +28,7 @@ const OrderDrawer = ({ order, onClose }) => {
             <div className="space-y-1">
               <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Customer</p>
               <p className="flex items-center gap-2 text-slate-900">
-                <User className="h-4 w-4 text-indigo-500" />
+                <User className="h-4 w-4 text-slate-900" />
                 {order.customer}
               </p>
               <p className="text-xs text-slate-500">{order.customerEmail}</p>
@@ -37,14 +37,14 @@ const OrderDrawer = ({ order, onClose }) => {
             <div className="space-y-1">
               <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Address</p>
               <p className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-indigo-500" />
+                <MapPin className="h-4 w-4 text-slate-900" />
                 {order.address}
               </p>
             </div>
             <div className="space-y-1">
               <p className="text-xs uppercase tracking-[0.3em] text-slate-500">Payment</p>
               <p className="flex items-center gap-2 text-slate-900">
-                <CreditCard className="h-4 w-4 text-indigo-500" />
+                <CreditCard className="h-4 w-4 text-slate-900" />
                 {order.paymentStatus}
               </p>
               <p className="text-sm font-semibold text-slate-900">Rs {order.total.toLocaleString()}</p>
@@ -73,7 +73,7 @@ const OrderDrawer = ({ order, onClose }) => {
             <div className="space-y-2">
               {order.timeline.map((step) => (
                 <div key={step} className="flex items-center gap-2 text-sm text-slate-600">
-                  <CheckCircle2 className="h-4 w-4 text-indigo-500" />
+                  <CheckCircle2 className="h-4 w-4 text-slate-900" />
                   <span>{step}</span>
                 </div>
               ))}

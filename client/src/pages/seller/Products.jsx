@@ -142,7 +142,7 @@ const SellerProducts = () => {
         <button
           type="button"
           onClick={() => navigate('/seller/products/new')}
-          className="flex items-center gap-2 rounded-full bg-indigo-600 px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg"
+          className="flex items-center gap-2 rounded-full bg-black px-5 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg"
         >
           <Plus className="h-4 w-4" />
           Add Product
@@ -206,7 +206,7 @@ const SellerProducts = () => {
                   <button
                     type="button"
                     onClick={() => openEdit(product)}
-                    className="flex items-center gap-1 rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600"
+                    className="flex items-center gap-1 rounded-full border border-slate-200 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-slate-900"
                   >
                     <Pencil className="h-4 w-4" />
                     Edit
@@ -276,7 +276,7 @@ const SellerProducts = () => {
                 type="button"
                 onClick={handleSave}
                 className={`rounded-2xl px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg ${
-                  isSaving ? 'bg-indigo-400 cursor-not-allowed' : 'bg-indigo-600 hover:bg-indigo-700'
+                  isSaving ? 'bg-slate-400 cursor-not-allowed' : 'bg-black hover:bg-gray-800'
                 }`}
                 disabled={isSaving}
               >

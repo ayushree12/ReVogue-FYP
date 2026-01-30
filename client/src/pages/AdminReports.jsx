@@ -73,7 +73,7 @@ const AdminReports = () => {
               type="button"
               onClick={() => downloadReport(period.value)}
               disabled={downloading === period.value}
-              className="rounded-full border border-slate-200 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-slate-700 transition hover:border-indigo-400 hover:text-indigo-600 disabled:opacity-60"
+              className="rounded-full border border-slate-200 px-5 py-2 text-sm font-semibold uppercase tracking-[0.25em] text-slate-700 transition hover:border-black hover:text-black disabled:opacity-60"
             >
               {downloading === period.value ? 'Preparing…' : `Download ${period.label}`}
             </button>

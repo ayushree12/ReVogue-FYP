@@ -3,7 +3,7 @@ import useToastStore from '../store/useToastStore';
 import { fetchVerificationRequests, reviewVerificationRequest } from '../api/admin';
 
 const statusStyles = {
-  pending: 'bg-indigo-50 text-indigo-600 border-indigo-200',
+  pending: 'bg-slate-100 text-slate-900 border-slate-300',
   approved: 'bg-emerald-50 text-emerald-600 border-emerald-200',
   rejected: 'bg-red-50 text-red-600 border-red-200'
 };
@@ -83,7 +83,7 @@ const AdminVerification = () => {
               </div>
               <p className="text-sm text-muted mt-2">{request.message || request.story || 'No notes provided.'}</p>
               <textarea
-                className="mt-3 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 focus:border-indigo-500 focus:outline-none"
+                className="mt-3 w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700 focus:border-slate-900 focus:outline-none"
                 placeholder="Add an admin note (optional)"
                 value={notes[request._id] || ''}
                 onChange={(e) => setNotes((prev) => ({ ...prev, [request._id]: e.target.value }))}

@@ -124,7 +124,7 @@ const Account = () => {
               <div>
                 <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Full name</label>
                 <input
-                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-slate-900 focus:outline-none"
                   value={profile.name}
                   onChange={(e) => handleProfileChange('name', e.target.value)}
                 />
@@ -133,7 +133,7 @@ const Account = () => {
                 <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Email</label>
                 <input
                   type="email"
-                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-slate-900 focus:outline-none"
                   value={profile.email}
                   onChange={(e) => handleProfileChange('email', e.target.value)}
                 />
@@ -141,7 +141,7 @@ const Account = () => {
               <div>
                 <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Avatar URL</label>
                 <input
-                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-slate-900 focus:outline-none"
                   value={profile.avatar}
                   onChange={(e) => handleProfileChange('avatar', e.target.value)}
                   placeholder="https://..."
@@ -150,7 +150,7 @@ const Account = () => {
               <div>
                 <label className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Delivery location</label>
                 <input
-                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-indigo-500 focus:outline-none"
+                  className="w-full rounded-2xl border border-slate-200 px-3 py-2 focus:border-slate-900 focus:outline-none"
                   value={profile.location}
                   onChange={(e) => handleProfileChange('location', e.target.value)}
                   placeholder="City, street, landmark"
@@ -158,7 +158,7 @@ const Account = () => {
               </div>
             </div>
             <button
-              className="w-full rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+              className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-semibold text-white shadow-lg transition hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-60"
               onClick={saveProfile}
               disabled={savingProfile}
             >
@@ -170,7 +170,7 @@ const Account = () => {
         <article className="section-card space-y-4 p-6">
           <p className="section-subtitle">Quick actions</p>
           <div className="space-y-3">
-            <button className="w-full rounded-2xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-lg hover:bg-indigo-700 transition">
+            <button className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-semibold text-white shadow-lg hover:bg-gray-800 transition">
               Chat with vendors
             </button>
             <button className="w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm font-semibold text-slate-700">
@@ -195,7 +195,7 @@ const Account = () => {
               <p className="section-subtitle">Latest order</p>
               <h2 className="text-2xl font-semibold">Order tracking</h2>
             </div>
-            <button className="text-xs uppercase tracking-[0.3em] text-indigo-600">Track</button>
+            <button className="text-xs uppercase tracking-[0.3em] text-slate-900">Track</button>
           </div>
           {latestOrder ? (
             <div className="space-y-3">
@@ -217,13 +217,13 @@ const Account = () => {
           </p>
           <textarea
             rows={4}
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
             value={verificationMessage}
             onChange={(e) => setVerificationMessage(e.target.value)}
             placeholder="Why should Revogue approve your vendor account?"
           />
           <button
-            className="w-full rounded-2xl bg-indigo-600 px-4 py-3 text-sm font-semibold text-white shadow-lg hover:bg-indigo-700 transition"
+            className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-semibold text-white shadow-lg hover:bg-gray-800 transition"
             onClick={submitVerificationRequest}
           >
             Submit for review

@@ -14,7 +14,7 @@ const SellerSettings = () => (
     <section className="grid gap-4 rounded-2xl border border-slate-200 bg-slate-50/70 p-4 md:grid-cols-2">
       <div className="space-y-2 rounded-2xl bg-white p-4 shadow-sm">
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
-          <Settings className="h-4 w-4 text-indigo-500" />
+          <Settings className="h-4 w-4 text-slate-900" />
           Profile
         </div>
         <div className="space-y-2 text-sm text-slate-600">
@@ -26,7 +26,7 @@ const SellerSettings = () => (
       </div>
       <div className="space-y-2 rounded-2xl bg-white p-4 shadow-sm">
         <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
-          <ShieldCheck className="h-4 w-4 text-indigo-500" />
+          <ShieldCheck className="h-4 w-4 text-slate-900" />
           Security
         </div>
         <div className="text-sm text-slate-600">
@@ -39,10 +39,10 @@ const SellerSettings = () => (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
       <div className="flex items-center justify-between">
         <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Billing</p>
-        <CreditCard className="h-5 w-5 text-indigo-500" />
+        <CreditCard className="h-5 w-5 text-slate-900" />
       </div>
       <p className="mt-2 text-sm text-slate-600">Payment method on file. Update to switch payout account.</p>
-      <button className="mt-4 rounded-2xl bg-indigo-600 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg">
+      <button className="mt-4 rounded-2xl bg-black px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-white shadow-lg">
         Manage payout
       </button>
     </section>
@@ -56,7 +56,7 @@ const SellerSettings = () => (
             className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-600"
           >
             <span>{option}</span>
-            <button className="rounded-full border border-slate-300 px-3 py-1 text-[0.6rem] font-bold uppercase tracking-[0.3em] text-indigo-600">
+            <button className="rounded-full border border-slate-300 px-3 py-1 text-[0.6rem] font-bold uppercase tracking-[0.3em] text-slate-900">
               ON
             </button>
           </div>
@@ -70,7 +70,7 @@ const SellerSettings = () => (
           <p className="text-xs uppercase tracking-[0.3em] text-slate-400">Preferences</p>
           <p className="text-slate-900">Personalize Revogue to suit your rhythm.</p>
         </div>
-        <button className="flex items-center gap-2 rounded-full border border-indigo-600 px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">
+        <button className="flex items-center gap-2 rounded-full border border-black px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em] text-black">
           <Zap className="h-4 w-4" />
           Customize
         </button>

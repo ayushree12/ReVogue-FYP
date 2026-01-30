@@ -36,7 +36,7 @@ const ForgotPassword = () => {
   return (
     <AuthLayout
       title="Reset your access"
-      description="Tell us your email and we’ll send a secure link that works for any role."
+      description="Tell us your email and we'll send a secure link that works for any role."
       highlightList={highlightList}
     >
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
@@ -45,7 +45,7 @@ const ForgotPassword = () => {
           <input
             type="email"
             autoComplete="email"
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
             {...register('email')}
           />
           {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
@@ -53,14 +53,14 @@ const ForgotPassword = () => {
 
         <button
           type="submit"
-          className="w-full rounded-2xl bg-indigo-600 px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-indigo-700 transition"
+          className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-gray-800 transition"
         >
           Send reset link
         </button>
 
         <p className="text-center text-xs uppercase tracking-[0.3em] text-slate-400">
           Back to{' '}
-          <Link to="/login" className="text-indigo-600 hover:underline">
+          <Link to="/login" className="text-slate-900 hover:underline">
             login
           </Link>
         </p>

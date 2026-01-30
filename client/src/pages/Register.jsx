@@ -53,7 +53,7 @@ const Register = () => {
           <input
             type="text"
             autoComplete="name"
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
             {...registerField('name')}
           />
           {errors.name && <p className="text-xs text-red-500">{errors.name.message}</p>}
@@ -64,7 +64,7 @@ const Register = () => {
           <input
             type="email"
             autoComplete="email"
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
             {...registerField('email')}
           />
           {errors.email && <p className="text-xs text-red-500">{errors.email.message}</p>}
@@ -75,7 +75,7 @@ const Register = () => {
           <input
             type="password"
             autoComplete="new-password"
-            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-indigo-500 focus:outline-none"
+            className="w-full rounded-2xl border border-slate-200 px-4 py-3 focus:border-slate-900 focus:outline-none"
             {...registerField('password')}
           />
           {errors.password && <p className="text-xs text-red-500">{errors.password.message}</p>}
@@ -83,7 +83,7 @@ const Register = () => {
 
         <button
           type="submit"
-          className="w-full rounded-2xl bg-indigo-600 px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-indigo-700 transition"
+          className="w-full rounded-2xl bg-black px-4 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg hover:bg-gray-800 transition"
         >
           Get started
         </button>
@@ -93,14 +93,14 @@ const Register = () => {
           <p>
             Vendor registrations are reviewed by admins. Submit your application and we will notify you once approved.
           </p>
-          <Link to="/seller/verification" className="font-semibold text-indigo-600 hover:underline">
+          <Link to="/seller/verification" className="font-semibold text-slate-900 hover:underline">
             Begin vendor registration
           </Link>
         </div>
 
         <p className="text-center text-xs uppercase tracking-[0.3em] text-slate-400">
           Have an account?{' '}
-          <Link to="/login" className="text-indigo-600 hover:underline">
+          <Link to="/login" className="text-slate-900 hover:underline">
             Login
           </Link>
         </p>

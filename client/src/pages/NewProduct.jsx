@@ -30,7 +30,7 @@ const NewProduct = () => {
   const { showToast } = useToastStore();
 
   const buildClass = (hasError) =>
-    `w-full rounded-2xl border px-3 py-2 transition focus:outline-none focus:border-indigo-500 ${
+    `w-full rounded-2xl border px-3 py-2 transition focus:outline-none focus:border-slate-900 ${
       hasError ? 'border-rose-300 bg-rose-50 placeholder:text-rose-400' : 'border-slate-200 bg-white'
     }`;
 
@@ -223,7 +223,7 @@ const NewProduct = () => {
 
       <button
         type="submit"
-        className={`w-full rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:brightness-110 ${
+        className={`w-full rounded-2xl bg-black px-6 py-3 text-sm font-semibold uppercase tracking-[0.3em] text-white shadow-lg transition hover:bg-gray-800 ${
           submitting ? 'cursor-not-allowed opacity-70' : ''
         }`}
         disabled={submitting}
