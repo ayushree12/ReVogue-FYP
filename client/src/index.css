@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+  --color-brand: #0f172a;
+  --color-brand-soft: #475569;
+  --color-accent: #1d4ed8;
+  --color-accent-strong: #0f172a;
+  --color-muted: #475569;
+  --color-border: rgba(15, 23, 42, 0.08);
+  --color-surface: #ffffff;
+  --color-surface-soft: #f8fafc;
+  color-scheme: light;
+}
+
+body {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: inherit;
+  min-height: 100vh;
+}
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.section-card {
+  border-radius: 1.25rem;
+  background: var(--color-surface-soft);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 24px 64px rgba(15, 23, 42, 0.08);
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 1.5rem;
+}
+
+.badge-pill {
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background-color: rgba(15, 23, 42, 0.04);
+  color: var(--color-brand);
+}
+
+.section-subtitle {
+  color: var(--color-muted);
+  letter-spacing: 0.08em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+}
+
+.headline {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+  font-weight: 700;
+  color: var(--color-brand);
+  line-height: 1.2;
+}
+
+.subhead {
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+  color: var(--color-muted);
+  max-width: 60ch;
+}
+
+button, input, textarea, select {
+  color: #0f172a;
+}
+
+input, textarea, select {
+  background-color: #ffffff;
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+::placeholder {
+  color: rgba(71, 85, 105, 0.5);
+}
